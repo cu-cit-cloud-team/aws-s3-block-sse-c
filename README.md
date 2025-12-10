@@ -2,7 +2,7 @@
 
 A Python toolkit for scanning AWS S3 buckets and blocking Server-Side Encryption with Customer-Provided Keys (SSE-C).
 
-AWS recently [announced](https://aws.amazon.com/blogs/storage/advanced-notice-amazon-s3-to-disable-the-use-of-sse-c-encryption-by-default-for-all-new-buckets-and-select-existing-buckets-in-april-2026/) plans to disable SSE-C encryption by default for all new buckets starting April 2016. At that time, SSE-C will also be disabled for existing that do not contain SSE-C-encrypted data. This toolkit helps block SSE-C on your S3 buckets in advance of that change.
+AWS recently [announced](https://aws.amazon.com/blogs/storage/advanced-notice-amazon-s3-to-disable-the-use-of-sse-c-encryption-by-default-for-all-new-buckets-and-select-existing-buckets-in-april-2026/) plans to disable SSE-C encryption by default for all new buckets starting April 2026. At that time, SSE-C will also be disabled for existing that do not contain SSE-C-encrypted data. This toolkit helps block SSE-C on your S3 buckets in advance of that change.
 
 :warning: Note that this toolkit does not check for existing SSE-C encrypted objects. It only modifies bucket-level encryption settings to block future use of SSE-C.
 
